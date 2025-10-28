@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <div id="app">
+      <div class="converter-container">
+        <h1>Temperature Converter</h1>
+
+        <div class="input-section">
+          <label for="temperature-input">Enter Temperature</label>
+          <input
+            type="text"
+            id="temperature-input"
+            placeholder="Enter a number"
+            autocomplete="off"
+          />
+          <span class="error-message" id="error-message"></span>
+        </div>
+
+        <div class="unit-selection">
+          <label>
+            <input type="radio" name="unit" value="fahrenheit" checked />
+            <span>Fahrenheit (°F)</span>
+          </label>
+          <label>
+            <input type="radio" name="unit" value="celsius" />
+            <span>Celsius (°C)</span>
+          </label>
+          <label>
+            <input type="radio" name="unit" value="kelvin" />
+            <span>Kelvin (K)</span>
+          </label>
+        </div>
+
+        <button id="convert-btn" class="convert-button">Convert</button>
+
+        <div class="result-section" id="result-section">
+          <h2>Result</h2>
+          <div class="result-content" id="result-content">
+            <p>Enter a temperature and click Convert</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
